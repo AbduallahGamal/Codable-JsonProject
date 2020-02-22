@@ -13,6 +13,7 @@
 		8ACF6988240176EC00492A94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF6986240176EC00492A94 /* Main.storyboard */; };
 		8ACF698A240176EE00492A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF6989240176EE00492A94 /* Assets.xcassets */; };
 		8ACF698D240176EE00492A94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACF698B240176EE00492A94 /* LaunchScreen.storyboard */; };
+		980789FA5CF6A5AFC267BC93 /* Pods_Codable_JsonProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984B7CDFD3D0321FE5F8BFAC /* Pods_Codable_JsonProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		8ACF6989240176EE00492A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ACF698C240176EE00492A94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ACF698E240176EE00492A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984B7CDFD3D0321FE5F8BFAC /* Pods_Codable_JsonProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codable_JsonProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBDB05CCD8FEB8664BA23AD /* Pods-Codable+JsonProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codable+JsonProject.release.xcconfig"; path = "Target Support Files/Pods-Codable+JsonProject/Pods-Codable+JsonProject.release.xcconfig"; sourceTree = "<group>"; };
+		FC030F5086C3058882FE0E85 /* Pods-Codable+JsonProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codable+JsonProject.debug.xcconfig"; path = "Target Support Files/Pods-Codable+JsonProject/Pods-Codable+JsonProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980789FA5CF6A5AFC267BC93 /* Pods_Codable_JsonProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C6570E61CBA8F028CB9F29A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC030F5086C3058882FE0E85 /* Pods-Codable+JsonProject.debug.xcconfig */,
+				BFBDB05CCD8FEB8664BA23AD /* Pods-Codable+JsonProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8ACF6974240176EC00492A94 = {
 			isa = PBXGroup;
 			children = (
 				8ACF697F240176EC00492A94 /* Codable+JsonProject */,
 				8ACF697E240176EC00492A94 /* Products */,
+				4C6570E61CBA8F028CB9F29A /* Pods */,
+				F7115DD49159A56D573C90CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Codable+JsonProject";
 			sourceTree = "<group>";
 		};
+		F7115DD49159A56D573C90CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				984B7CDFD3D0321FE5F8BFAC /* Pods_Codable_JsonProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ACF6991240176EE00492A94 /* Build configuration list for PBXNativeTarget "Codable+JsonProject" */;
 			buildPhases = (
+				CBC7CFF2AB2B0A356F90D670 /* [CP] Check Pods Manifest.lock */,
 				8ACF6979240176EC00492A94 /* Sources */,
 				8ACF697A240176EC00492A94 /* Frameworks */,
 				8ACF697B240176EC00492A94 /* Resources */,
+				CC224BD135B1F56B7A270FDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBC7CFF2AB2B0A356F90D670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Codable+JsonProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC224BD135B1F56B7A270FDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Codable+JsonProject/Pods-Codable+JsonProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Codable+JsonProject/Pods-Codable+JsonProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Codable+JsonProject/Pods-Codable+JsonProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8ACF6979240176EC00492A94 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		8ACF6992240176EE00492A94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC030F5086C3058882FE0E85 /* Pods-Codable+JsonProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		8ACF6993240176EE00492A94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBDB05CCD8FEB8664BA23AD /* Pods-Codable+JsonProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
