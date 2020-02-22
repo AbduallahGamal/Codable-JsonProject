@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				FC030F5086C3058882FE0E85 /* Pods-Codable+JsonProject.debug.xcconfig */,
 				BFBDB05CCD8FEB8664BA23AD /* Pods-Codable+JsonProject.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,6 +72,9 @@
 		8ACF697F240176EC00492A94 /* Codable+JsonProject */ = {
 			isa = PBXGroup;
 			children = (
+				8AD34F6724017973002F4520 /* Model */,
+				8AD34F6624017963002F4520 /* View */,
+				8AD34F6524017956002F4520 /* Controller */,
 				8ACF6980240176EC00492A94 /* AppDelegate.swift */,
 				8ACF6982240176EC00492A94 /* SceneDelegate.swift */,
 				8ACF6984240176EC00492A94 /* ViewController.swift */,
@@ -82,6 +84,27 @@
 				8ACF698E240176EE00492A94 /* Info.plist */,
 			);
 			path = "Codable+JsonProject";
+			sourceTree = "<group>";
+		};
+		8AD34F6524017956002F4520 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8AD34F6624017963002F4520 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AD34F6724017973002F4520 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F7115DD49159A56D573C90CE /* Frameworks */ = {
